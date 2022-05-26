@@ -1,0 +1,11 @@
+{
+  "item.metal-alchemy.icrium_ingot": "Icrium Ingot",
+  "item.metal-alchemy.icrium_nugget": "Icrium Nugget",
+  "item.metal-alchemy.raw_icrium": "Raw Icrium",
+
+  "block.metal-alchemy.icrium_block": "Block of Icrium",
+  "block.metal-alchemy.icrium_ore": "Icrium Ore",
+  "block.metal-alchemy.deepslate_icrium_ore": "Deepslate Icrium Ore",
+
+  "general.tooltip": "Press Shift For More Info"
+}

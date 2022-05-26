@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "east": "metal-alchemy:block/blocks/icrium_block_4",
+    "west": "metal-alchemy:block/blocks/icrium_block_2",
+    "north": "metal-alchemy:block/blocks/icrium_block",
+    "south": "metal-alchemy:block/blocks/icrium_block_3",
+    "up": "metal-alchemy:block/blocks/icrium_block_4",
+    "down": "metal-alchemy:block/blocks/icrium_block",
+    "particle": "metal-alchemy:block/blocks/icrium_block"
+  }
+}
