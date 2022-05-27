@@ -28,7 +28,7 @@ public class ModBlocks {
     public static final Block ICRIUM_ORE = registerBlock("icrium_ore",
             new Block(FabricBlockSettings.of(Material.STONE).strength(6f).requiresTool()), ItemGroup.MISC);
     public static final Block DEEPSLATE_ICRIUM_ORE = registerBlock("deepslate_icrium_ore",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(6f).requiresTool()), ItemGroup.MISC,"","");
+            new Block(FabricBlockSettings.of(Material.STONE).strength(6f).requiresTool()), ItemGroup.MISC,"poison.tier1","shiftpoison.tier1");
 
     private static Block registerBlock(String name, Block block, ItemGroup group, String tooltipKey, String shiftTooltipKey) {
         registerBlockItem(name, block, group, tooltipKey, shiftTooltipKey);
@@ -41,10 +41,10 @@ public class ModBlocks {
                     @Override
                     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
                         if(Screen.hasShiftDown()) {
+                            tooltip.add(new TranslatableText(shiftTooltipKey));
+                        } else {
                             tooltip.add(new TranslatableText(tooltipKey));
                             tooltip.add(new TranslatableText("general.tooltip"));
-                        } else {
-                            tooltip.add(new TranslatableText(shiftTooltipKey));
                         }
                     }
                 });
@@ -61,9 +61,9 @@ public class ModBlocks {
                     @Override
                     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
                         if(Screen.hasShiftDown()) {
-                            tooltip.add(new TranslatableText("general.tooltip"));
-                        } else {
                             tooltip.add(new TranslatableText(shiftTooltipKey));
+                        } else {
+                            tooltip.add(new TranslatableText("general.tooltip"));
                         }
                     }
                 });

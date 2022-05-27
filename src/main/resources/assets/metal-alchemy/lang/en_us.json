@@ -5,6 +5,7 @@
 
   "block.metal-alchemy.icrium_block": "Block of Icrium",
   "block.metal-alchemy.icrium_ore": "Icrium Ore",
+  "poison.tier1": "/u56E774Poison I",
   "block.metal-alchemy.deepslate_icrium_ore": "Deepslate Icrium Ore",
 
   "general.tooltip": "Press Shift For More Info"
